@@ -6,6 +6,7 @@ public class pistol : MonoBehaviour
 {
   
     public GameObject hand_a;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -18,4 +19,6 @@ public class pistol : MonoBehaviour
     {
         transform.position= new Vector3(hand_a.transform.position.x, hand_a.transform.position.y, hand_a.transform.position.z);
     }
+
+   
 }
