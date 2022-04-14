@@ -7,6 +7,9 @@ public class playerDeath : MonoBehaviour
 {
 
     public GameObject	player;
+    public GameObject	bag;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +27,9 @@ public class playerDeath : MonoBehaviour
 
         if(collision.gameObject.tag=="ball"){
 
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             Destroy(player);
-
-           SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Destroy(bag);
         }
     }
 }
